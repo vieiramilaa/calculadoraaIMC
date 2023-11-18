@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #DEEFE7;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+#img img{
+    width: 32rem;
+}
+
+#calculator{
+    display: flex;
+    flex-direction: column ;
+    gap: 2rem;
+    padding: 2rem;
+    color: #f8fafc;
+    background-color: #159A9C;
+    border-radius: 8px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#title{
+    font-size: 2.25rem;
+    position: relative;
+}
+
+#title::after{
+    position: absolute;
+    content: '';
+    background-color: #023535;
+    width: 8rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+ div .input-box label{
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+ div .input-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+div .input-field span,
+div .input-field i{
+    color: #cbd5e1;
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+}
+
+div .input-field input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #f8fafc;
+    padding: 0 0.5rem;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+    appearance: none;
+
+
+}
+
+.input-field input :focus{
+    outline: none;
+}
+#calculate {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #002333;
+    color: var(--cor-texto);
+    padding: 0.5rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#moreinfo a{
+    color: #FFFFFF;
+
+}
+
+#moreinfo a:hover{
+    color: #023535;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #calculator {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
